@@ -16,6 +16,12 @@ namespace MvcPlantilla.Controllers
 
         public ActionResult Index()
         {
+            ViewData["video"]=BaseHelper.ejecutarConsulta("Select *From video", CommandType.Text);
+            return View();
+        }
+
+        public ActionResult Insertar()
+        {
             return View();
         }
         [HttpPost]
@@ -31,12 +37,12 @@ namespace MvcPlantilla.Controllers
             return RedirectToAction("Index", "Video");
           
         }
-        
-        public ActionResult Insertar()
+
+
+        public ActionResult Eliminar()
         {
             return View();
         }
-
         [HttpPost]
         public ActionResult Eliminar(int idVideo)
         {
@@ -45,11 +51,12 @@ namespace MvcPlantilla.Controllers
             BaseHelper.ejecutarConsulta("Delete from video where idVideo=@idVideo", CommandType.Text, parametros);
             return RedirectToAction("Index", "Video");
         }
-        
-        public ActionResult Eliminar()
+
+        public ActionResult Modificar()
         {
             return View();
         }
+       
 
         [HttpPost]
         public ActionResult Modificar(int idVideo, string titulo, int repro, string url)
@@ -63,10 +70,7 @@ namespace MvcPlantilla.Controllers
             return RedirectToAction("Index", "Video");
         }
         
-        public ActionResult Modificar()
-        {
-            return View();
-        }
+       
 
     }
 }
