@@ -77,8 +77,11 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Index.aspx" />
+    <Content Include="Views\Video\Eliminar.aspx" />
     <Content Include="Views\Video\Index.aspx" />
+    <Content Include="Views\Video\Insertar.aspx" />
+    <Content Include="Views\Video\Modificar.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -102,7 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Shared\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

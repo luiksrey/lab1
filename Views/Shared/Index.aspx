@@ -7,11 +7,10 @@
     <title>Index</title>
 </head>
 <body>
-    <h1> Bienvenido </h1>
-    <h1>Opciones</h1>
-    <h1>Ver Videos</h1>
-    <h1>Agregar video</h1>
-    <h1>Eliminar video</h1>
-    <h1>Modificar video</h1>
+     <h1>Menu de opciones:</h1>
+   <a href="/Video/Create">Agregar video</a>
+    <a href="/Video/Edit">Modificar video</a>
+     <a href="/Video/Delete">Eliminar video</a>
+      <a href="/Video/Index">Consultar todos los videos</a>
 </body>
 </html>
